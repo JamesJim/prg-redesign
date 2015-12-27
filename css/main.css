@@ -1,0 +1,186 @@
+/****************************
+*****************************
+          BASE STYLES
+*****************************
+****************************/
+
+* {
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+}
+
+nav {
+  border-bottom: solid thin #fff;
+  border-top: solid thin #fff;
+}
+
+main {
+  position: relative;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h6 {
+  font-size: 1.3em;
+}
+
+span {
+  font-size: 2.5em;
+}
+
+strong {
+  color: orange;
+}
+
+p {
+  font-size: 1em;
+}
+
+nav li {
+  background: gray;
+  margin: 1px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: #fff solid thin;
+  background: #000;
+  height: 70px;
+}
+
+/****************************
+*****************************
+          LAYOUT
+*****************************
+****************************/
+
+#wrapper {
+  text-align: center;
+  background: #000;
+  min-height: 700px;
+  padding-top: 5px;
+  padding-bottom: 100px;
+}
+
+#headerLogo {
+  width: 40%;
+  max-width: 300px;
+}
+
+.feature {
+  margin: 5px 0 5px 0;
+  padding-bottom: 5px;
+  border-bottom: white solid thin;
+}
+
+.feature2 {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.imgCarouselDiv {
+  /*position: relative;*/
+  /*border: solid orange;*/
+  max-width: 500px;
+  max-height: 250px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.imgCarouselItem {
+  width: 320px;
+  height: 250px;
+  /*overflow: hidden;*/
+}
+
+.slick-slider {
+  /*border: yellow solid;*/
+  width: 320px;
+  height: 250px;
+  /*overflow: hidden;*/
+}
+
+.slick-track {
+  /*border: skyblue solid;*/
+  /*overflow: hidden;*/
+
+
+}
+
+.slick-active {
+  /*border: red solid;*/
+  /*overflow: hidden;*/
+
+}
+
+.slick-prev {
+  border: red solid;
+
+  margin-left: 4px ;
+}
+
+.slick-next {
+  border: red solid;
+
+  margin-right: 4px;
+}
+
+.carouselSpan {
+  font-size: 2.1em;
+  border: green solid;
+}
+
+.homePageFeature {
+  margin: 25px 2px 0 2px;
+  border: yellow solid;
+}
+
+.aboutPageSection {
+  margin: 25px 15px 25px 15px;
+}
+
+#officesTemplateOutput {
+}
+
+.officeLocations {
+  margin: 15px 0 0 0;
+}
+
+.agentsPageFeature {
+  margin: 50px 2px 50px 2px;
+}
+
+#agentsTemplateOutput {
+  margin: 10px 5px 10px 5px;
+}
+
+.agentProfiles {
+  margin: 30px 0 0 0;
+
+}
+
+.agentPhoto {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+
+.footerSpan {
+  font-size: .8em;
+}

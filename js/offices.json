@@ -1,0 +1,16 @@
+[
+  {
+    "office": "Ft. Wright",
+    "address1": "10 Kyles Ln Suite 200",
+    "address2": "Ft. Wright, KY 41011",
+    "phone": "(859)578-8111",
+    "fax": "(859)578-0028"
+  },
+  {
+    "office": "West Chester",
+    "address1": "123 Union Center",
+    "address2": "West Chester, OH 45069",
+    "phone": "(513)555-1234",
+    "fax": "(513)555-1234"
+  }
+]

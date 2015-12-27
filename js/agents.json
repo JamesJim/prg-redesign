@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Mark Perkins, ABR, CRS, CSP",
+    "position": "Principal Broker",
+    "licenses": "OH, KY & IN",
+    "mobile": "(859)653-3382",
+    "office": "(859)578-8111",
+    "fax":"(859)578-0028",
+    "email": "mark@pivotrealty.com",
+    "facebook": "http:\/\/www.facebook.com\/PivotRealtyGroup\/",
+    "photo": "img\/profile_placeholder.png"
+  },
+  {
+    "name": "Solomon Wilburn",
+    "position": "Sales Manager",
+    "licenses": "OH & KY",
+    "mobile": "513-550-1341",
+    "office": "859-578-8111",
+    "fax":"(859)578-0028",
+    "email": "solomon@pivotrealty.com",
+    "facebook": "http:\/\/www.facebook.com\/PivotRealtyGroup\/",
+    "photo": "img\/solomonwilburn.png"
+  },
+  {
+    "name": "Katie Robbins",
+    "position": "Sales Vice President",
+    "licenses": "OH & KY",
+    "mobile": "(859)816-2502",
+    "office": "859-578-8111",
+    "fax":"(859)578-0028",
+    "email": "katie@pivotrealty.com",
+    "facebook": "http:\/\/www.facebook.com\/PivotRealtyGroup\/",
+    "photo": "img\/katierobbins.png"
+  },
+  {
+    "name": "Lee Bledsoe",
+    "position": "Sales Vice President",
+    "licenses": "OH & KY",
+    "mobile": "(859)846-5544",
+    "office": "859-578-8111",
+    "fax":"(859)578-0028",
+    "email": "lee@pivotrealty.com",
+    "facebook": "http:\/\/www.facebook.com\/PivotRealtyGroup\/",
+    "photo": "img\/leebledsoe.png"
+  },
+  {
+    "name": "JJ Mirick",
+    "position": "Operations Manager",
+    "licenses": "OH & KY",
+    "mobile": "(513)638-7539",
+    "office": "859-578-8111",
+    "fax":"(859)578-0028",
+    "email": "jj@pivotrealty.com",
+    "facebook": "http:\/\/www.facebook.com\/PivotRealtyGroup\/",
+    "photo": "img\/jjmirick.png"
+  },
+  {
+    "name": "Quintin Suggs",
+    "position": "Sales Vice President",
+    "licenses": "OH, KY & IN",
+    "mobile": "(513)390-1001",
+    "office": "859-578-8111",
+    "fax":"(859)578-0028",
+    "email": "qsuggs@pivotrealty.com",
+    "facebook": "http:\/\/www.facebook.com\/QSuggsRealtor/\/",
+    "photo": "img\/quintinsuggs.png"
+  },
+  {
+    "name": "James Clodfelder",
+    "position": "Sales Vice President",
+    "licenses": "OH & KY",
+    "mobile": "859-982-4164",
+    "office": "859-578-8111",
+    "fax":"(859)578-0028",
+    "email": "james@pivotrealty.com",
+    "facebook": "http:\/\/www.facebook.com\/PivotRealtyGroup\/",
+    "photo": "img\/jamesclodfelder.png"
+  }
+]
