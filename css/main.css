@@ -29,12 +29,12 @@ h2 {
   font-size: 2.5em;
 }
 
-h6 {
-  font-size: 1.3em;
+h3 {
+  font-size: 1.5em;
 }
 
-span {
-  font-size: 2.5em;
+h6 {
+  font-size: 1.3em;
 }
 
 strong {
@@ -42,13 +42,18 @@ strong {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 nav li {
+  font-size: 1.2em;
   background: gray;
   margin: 1px;
   cursor: pointer;
+}
+
+.featureText {
+  font-size: .6em;
 }
 
 footer {
@@ -147,7 +152,7 @@ footer {
 
 .homePageFeature {
   margin: 25px 2px 0 2px;
-  border: yellow solid;
+  /*border: yellow solid;*/
 }
 
 .aboutPageSection {
@@ -183,4 +188,111 @@ footer {
 
 .footerSpan {
   font-size: .8em;
+}
+
+
+/****************************
+*****************************
+      RESPONSIVE DESIGN
+*****************************
+****************************/
+
+
+@media (min-width: 400px){
+
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navItem {
+    flex: 1;
+  }
+
+  .featureText {
+    font-size: .8em;
+  }
+
+  main {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .homePageFeature {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .aboutPageSection {
+    text-align: left;
+  }
+
+  #agentsTemplateOutput {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .agentProfiles {
+    flex: 1;
+    flex-basis: 175px;
+  }
+}
+
+@media (min-width: 600px){
+
+  .featureText {
+    font-size: 1em;
+  }
+
+  main {
+    position: relative;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h6 {
+    font-size: 1.8em;
+  }
+
+  span {
+    font-size: 3em;
+  }
+
+  strong {
+    color: orange;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  nav li {
+    font-size: 1.5em;
+    background: gray;
+    margin: 1px;
+    cursor: pointer;
+  }
+
+  #aboutPage {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .agentProfiles {
+    flex-basis: 204px;
+  }
+
 }
