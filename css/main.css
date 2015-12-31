@@ -65,6 +65,11 @@ footer {
   height: 70px;
 }
 
+.agentProfiles:hover {
+  color: orange;
+  cursor: pointer;
+}
+
 /****************************
 *****************************
           LAYOUT
@@ -119,20 +124,7 @@ footer {
   height: 250px;
   /*overflow: hidden;*/
 }
-
-.slick-track {
-  /*border: skyblue solid;*/
-  /*overflow: hidden;*/
-
-
-}
-
-.slick-active {
-  /*border: red solid;*/
-  /*overflow: hidden;*/
-
-}
-
+/*
 .slick-prev {
   border: red solid;
 
@@ -143,12 +135,7 @@ footer {
   border: red solid;
 
   margin-right: 4px;
-}
-
-.carouselSpan {
-  font-size: 2.1em;
-  border: green solid;
-}
+}*/
 
 .homePageFeature {
   margin: 25px 2px 0 2px;
@@ -167,7 +154,7 @@ footer {
 }
 
 .agentsPageFeature {
-  margin: 50px 2px 50px 2px;
+  margin: 50px 12px 40px 12px;
 }
 
 #agentsTemplateOutput {
@@ -176,7 +163,6 @@ footer {
 
 .agentProfiles {
   margin: 30px 0 0 0;
-
 }
 
 .agentPhoto {
@@ -185,6 +171,10 @@ footer {
   border-radius: 50%;
 }
 
+.agentHiddenProfile {
+  display: none;
+  margin-top: 10px;
+}
 
 .footerSpan {
   font-size: .8em;
@@ -209,11 +199,13 @@ footer {
     flex: 1;
   }
 
+  .navAgents {
+    flex: 2;
+  }
+
   .featureText {
     font-size: .8em;
   }
-
-
 
   .homePageFeature {
     margin-left: 15%;
@@ -234,7 +226,7 @@ footer {
 
   .agentProfiles {
     flex: 1;
-    flex-basis: 175px;
+    flex-basis: 215px;
   }
 }
 
@@ -273,7 +265,7 @@ footer {
   }
 
   p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   nav li {
@@ -281,6 +273,11 @@ footer {
     background: gray;
     margin: 1px;
     cursor: pointer;
+  }
+
+  .homePageFeature {
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
   #aboutPage {
@@ -292,4 +289,66 @@ footer {
     flex-basis: 204px;
   }
 
+  .imgCarouselDiv {
+    /*position: relative;*/
+    /*border: solid orange;*/
+    max-width: 600px;
+    max-height: 350px;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+
+  .imgCarouselItem {
+    width: 420px;
+    height: 350px;
+    /*overflow: hidden;*/
+  }
+
+  .slick-slider {
+    /*border: yellow solid;*/
+    width: 420px;
+    height: 350px;
+    /*overflow: hidden;*/
+  }
+
+
 }
+
+@media (min-width: 1000px){
+
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 4em;
+  }
+
+  h3 {
+    font-size: 3em;
+  }
+
+  h6 {
+    font-size: 2em;
+  }
+
+  span {
+    font-size: 3em;
+  }
+
+  strong {
+    color: orange;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  #aboutPage {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .agentProfiles {
+    flex-basis: 225px;
+  }
