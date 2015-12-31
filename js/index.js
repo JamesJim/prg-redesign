@@ -2,6 +2,7 @@
 $(function(){
 
 
+
   var main = {};
 
   //function to compile object data into agents template
@@ -77,9 +78,18 @@ $(function(){
   });
 
 
-main.fadeFeature = function(){
-  $('.featureText').toggle(1000).delay(10000);    main.fadeFeature();
-}
+  // *****************SHOW/HIDE EXTENDED AGENT PROFILES*************
+
+  $('section').on('click','.agentProfiles',function(){
+    $(this).children('.agentHiddenProfile').slideToggle('fast');
+  });
+
+
+
+
+// main.fadeFeature = function(){
+//   $('.featureText').toggle(1000).delay(10000);    main.fadeFeature();
+// }
 
 
 
@@ -125,7 +135,7 @@ main.fadeFeature = function(){
   });
 
 
-  main.fadeFeature();
+  // main.fadeFeature();
 
 
 
