@@ -43,13 +43,16 @@ strong {
 
 p {
   font-size: 1.2em;
+  line-height: 130%;
 }
 
 nav li {
-  font-size: 1.2em;
+  font-size: 1.4em;
   background: gray;
   margin: 1px;
+  padding: 2px;
   cursor: pointer;
+  height: 25px;
 }
 
 .featureText {
@@ -65,8 +68,11 @@ footer {
   height: 70px;
 }
 
-.agentProfiles:hover {
-  color: orange;
+nav li:hover {
+  border: orange solid thin;
+}
+
+.agentProfiles {
   cursor: pointer;
 }
 
@@ -142,21 +148,6 @@ footer {
   /*border: yellow solid;*/
 }
 
-.aboutPageSection {
-  margin: 25px 15px 25px 15px;
-}
-
-#officesTemplateOutput {
-}
-
-.officeLocations {
-  margin: 15px 0 0 0;
-}
-
-.agentsPageFeature {
-  margin: 50px 12px 40px 12px;
-}
-
 #agentsTemplateOutput {
   margin: 10px 5px 10px 5px;
 }
@@ -175,6 +166,23 @@ footer {
   display: none;
   margin-top: 10px;
 }
+
+.aboutPageSection {
+  margin: 25px 15px 25px 15px;
+}
+
+#officesTemplateOutput {
+}
+
+.officeLocations {
+  margin: 15px 0 0 0;
+}
+
+.agentsPageFeature {
+  margin: 50px 12px 40px 12px;
+}
+
+
 
 .footerSpan {
   font-size: .8em;

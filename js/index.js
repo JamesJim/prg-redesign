@@ -78,7 +78,18 @@ $(function(){
   });
 
 
-  // *****************SHOW/HIDE EXTENDED AGENT PROFILES*************
+  // *****************HOVER/SHOW/HIDE EXTENDED AGENT PROFILES*************
+
+  $('section').on('mouseenter','.agentProfiles',function(){
+    $(this).children().css('color','orange');
+  });
+
+  //mouseleave only triggers when leaving the parent (mouseout triggers on the parent and any children)
+  $('section').on('mouseleave','.agentProfiles',function(){
+    $(this).children().css('color','white');
+  });
+
+
 
   $('section').on('click','.agentProfiles',function(){
     $(this).children('.agentHiddenProfile').slideToggle('fast');
@@ -87,9 +98,9 @@ $(function(){
 
 
 
-// main.fadeFeature = function(){
-//   $('.featureText').toggle(1000).delay(10000);    main.fadeFeature();
-// }
+main.fadeFeature = function(){
+  $('.featureText').toggle(1000).delay(10000);    main.fadeFeature();
+}
 
 
 
@@ -135,7 +146,7 @@ $(function(){
   });
 
 
-  // main.fadeFeature();
+  main.fadeFeature();
 
 
 
