@@ -48,13 +48,15 @@ p {
   line-height: 130%;
 }
 
-nav li {
+nav li,
+.agentsFilterListItem {
   font-size: 1.4em;
   background: gray;
   margin: 1px;
   padding: 2px;
   cursor: pointer;
   height: 25px;
+  list-style: none;
 }
 
 .featureText {
@@ -70,9 +72,11 @@ footer {
   height: 70px;
 }
 
-nav li:hover {
+nav li:hover,
+.agentsFilterListItem:hover {
   border: orange solid thin;
 }
+
 
 .agentProfiles {
   cursor: pointer;
@@ -155,6 +159,19 @@ nav li:hover {
   /*border: yellow solid;*/
 }
 
+.agentsPageFeature {
+  margin: 50px 12px 40px 12px;
+}
+
+.agentsFilterList {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  cursor: pointer;
+  width: 75%;
+  justify-content: center;
+}
+
 #agentsTemplateOutput {
   margin: 10px 0;
 }
@@ -175,24 +192,21 @@ nav li:hover {
 }
 
 .aboutPageSection {
-  margin: 25px 0;
+  margin: 25px auto;
   text-align: left;
 }
 
 #officesTemplateOutput {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  margin: 0 auto;
 }
 
 .officeLocations {
   margin: 15px 0 0 0;
+  flex: 1;
+  flex-basis: 100px;
+  text-align: left;
 }
-
-.agentsPageFeature {
-  margin: 50px 12px 40px 12px;
-}
-
-
 
 .footerSpan {
   font-size: .8em;
@@ -231,19 +245,18 @@ nav li:hover {
   }
 
   #aboutPage {
-    text-align: left;
   }
 
   #officesTemplateOutput {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: center;
   }
 
   .officeLocations {
     flex: 1;
-    flex-basis: 215px;
+    width: 50px;
   }
 
   #agentsTemplateOutput {
@@ -315,6 +328,17 @@ nav li:hover {
     margin-right: 15%;
   }
 
+  .agentsFilterList {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .agentsFilterListItem {
+    flex: 1;
+    flex-basis: 250px;
+    font-size: 1em;
+  }
+
   .agentProfiles {
     flex-basis: 204px;
   }
@@ -377,6 +401,14 @@ nav li:hover {
   #aboutPage {
     margin-left: 15%;
     margin-right: 15%;
+  }
+
+  .agentsFilterListItem {
+    flex-basis: 250px;
+  }
+
+  .agentsFilterListItem h3 {
+    font-size: 1.8em;
   }
 
   .agentProfiles {
