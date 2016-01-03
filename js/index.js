@@ -95,12 +95,21 @@ $(function(){
     $(this).children('.agentHiddenProfile').slideToggle('fast');
   });
 
+  // *****************FILTER AGENT PROFILES*************
+
+  $('.agentsFilterListItem').on('click', function(){
+    var $selection = $(this).attr("id");
+    console.log($selection);
+    $('.agentProfiles').hide();
+    $("section[class*='"+$selection+"']").show();
+  });
+
+  // *****************ALTERNATE SHOW/HIDE OF FEATURE DIV*************
 
 
-
-main.fadeFeature = function(){
-  $('.featureText').toggle(1000).delay(10000);    main.fadeFeature();
-}
+  main.fadeFeature = function(){
+    $('.featureText').toggle(1000).delay(10000);    main.fadeFeature();
+  }
 
 
 
