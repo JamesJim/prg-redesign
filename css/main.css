@@ -31,10 +31,12 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+  font-weight: 500;
 }
 
 h6 {
   font-size: 1.3em;
+  font-weight: 500;
 }
 
 strong {
@@ -95,6 +97,11 @@ nav li:hover {
   max-width: 300px;
 }
 
+#aboutPage {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .feature {
   margin: 5px 0 5px 0;
   padding-bottom: 5px;
@@ -149,7 +156,7 @@ nav li:hover {
 }
 
 #agentsTemplateOutput {
-  margin: 10px 5px 10px 5px;
+  margin: 10px 0;
 }
 
 .agentProfiles {
@@ -168,14 +175,20 @@ nav li:hover {
 }
 
 .aboutPageSection {
-  margin: 25px 15px 25px 15px;
+  margin: 25px 0;
+  text-align: left;
+  border: yellow solid;
 }
 
 #officesTemplateOutput {
+  display: flex;
+  flex-direction: column;
+  border: blue solid;
 }
 
 .officeLocations {
   margin: 15px 0 0 0;
+  border: red solid;
 }
 
 .agentsPageFeature {
@@ -220,8 +233,20 @@ nav li:hover {
     margin-right: 15%;
   }
 
-  .aboutPageSection {
+  #aboutPage {
     text-align: left;
+  }
+
+  #officesTemplateOutput {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .officeLocations {
+    flex: 1;
+    flex-basis: 215px;
   }
 
   #agentsTemplateOutput {
