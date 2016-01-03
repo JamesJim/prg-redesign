@@ -177,18 +177,15 @@ nav li:hover {
 .aboutPageSection {
   margin: 25px 0;
   text-align: left;
-  border: yellow solid;
 }
 
 #officesTemplateOutput {
   display: flex;
   flex-direction: column;
-  border: blue solid;
 }
 
 .officeLocations {
   margin: 15px 0 0 0;
-  border: red solid;
 }
 
 .agentsPageFeature {
