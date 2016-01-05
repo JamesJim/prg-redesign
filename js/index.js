@@ -42,7 +42,7 @@ $(function(){
     });
   }; //end fetchData function
 
-  //get agents data, compile, send to page
+  //call functions to get agents data, compile, send to page
   var agentsData;
   main.fetchData('js/agents.json', agentsData, 'agentstemplate.html', '#agentsTemplateOutput');
 
@@ -69,6 +69,7 @@ $(function(){
     $('#homePage').hide();
     $('#aboutPage').hide();
     $('#agentsPage').show();
+    $('.agentProfiles').show();
   });
 
   $('.navHome').on('click', function(){
