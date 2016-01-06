@@ -10,6 +10,7 @@
   background-color: #000;
   font-family: 'Raleway', sans-serif;
   font-size: 10px;
+  font-weight: 100;
 }
 
 nav {
@@ -48,7 +49,7 @@ p {
   line-height: 130%;
 }
 
-nav li,
+.navItem,
 .agentsFilterListItem {
   font-size: 1.4em;
   background: gray;
@@ -75,6 +76,7 @@ footer {
 nav li:hover,
 .agentsFilterListItem:hover {
   border: orange solid thin;
+  background-color: #999999;
 }
 
 
@@ -259,6 +261,12 @@ nav li:hover,
     width: 50px;
   }
 
+  .agentsFilterListItem {
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 100;
+  }
+
   #agentsTemplateOutput {
     display: flex;
     flex-direction: row;
@@ -312,7 +320,7 @@ nav li:hover,
   }
 
   nav li {
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
     background: gray;
     margin: 1px;
     cursor: pointer;
@@ -334,8 +342,7 @@ nav li:hover,
   }
 
   .agentsFilterListItem {
-    flex: 1;
-    flex-basis: 250px;
+    flex-basis: 181px;
     font-size: 1em;
   }
 

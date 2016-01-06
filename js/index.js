@@ -12,7 +12,6 @@ $(function(){
     console.log('Handlebars templatePath', templatePath);
     console.log('Handlebars outputDiv', outputDiv);
 
-
     $.get(templatePath, function(template){
       var compiler = Handlebars.compile(template);
       console.log('Compiler: ', compiler);
@@ -81,6 +80,7 @@ $(function(){
 
   // *****************HOVER/SHOW/HIDE EXTENDED AGENT PROFILES*************
 
+  //hover for agent profile items
   $('section').on('mouseenter','.agentProfiles',function(){
     $(this).children().css('color','orange');
   });
@@ -90,8 +90,16 @@ $(function(){
     $(this).children().css('color','white');
   });
 
+  //hover for hidden profile items
+  $('section').on('mouseenter','.agentHiddenProfileItem',function(){
+    $(this).children('a').css('color','orange');
+  });
 
+  $('section').on('mouseleave','.agentHiddenProfileItem',function(){
+    $(this).children('a').css('color','white');
+  });
 
+  //reveal or hide hidden profile items
   $('section').on('click','.agentProfiles',function(){
     $(this).children('.agentHiddenProfile').slideToggle('fast');
   });
