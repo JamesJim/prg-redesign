@@ -1,11 +1,24 @@
 
 $(function(){
 
-
+  function runAnimation(){
+    $('.introAnimationLogo').animate({"left": "0"}, 2000)
+      .delay(1500)
+      .animate({"top": "0", "maxWidth": "300px"}, 700)
+      ;
+    $('.introAnimationText').animate({"right": "0"}, 2000)
+      .delay(1500)
+      .animate({"top": "1000px"}, 700);
+    $('#introAnimationPage').delay(3500).animate({"opacity": "0"},
+      {duration: 1000,
+      complete: function(){
+        $('#introAnimationPage').hide()}
+      });
+  } //end runAnimation function
 
   var main = {};
 
-  //function to compile object data into agents template
+  //function to compile object data into templates
   main.handlebars = function(data, templatePath, outputDiv){
     console.log('Running handlebars');
     console.log('Handlebars data', data);
@@ -82,7 +95,7 @@ $(function(){
 
   //hover for agent profile items
   $('section').on('mouseenter','.agentProfiles',function(){
-    $(this).children().css('color','orange');
+    $(this).children().css('color','#ff8000');
   });
 
   //mouseleave only triggers when leaving the parent (mouseout triggers on the parent and any children)
@@ -92,7 +105,7 @@ $(function(){
 
   //hover for hidden profile items
   $('section').on('mouseenter','.agentHiddenProfileItem',function(){
-    $(this).children('a').css('color','orange');
+    $(this).children('a').css('color','#ff8000');
   });
 
   $('section').on('mouseleave','.agentHiddenProfileItem',function(){
@@ -163,7 +176,7 @@ $(function(){
 
   });
 
-
+  runAnimation();
   main.fadeFeature();
 
 
