@@ -31,8 +31,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
-  font-weight: 500;
+  font-size: 1.4em;
+  font-weight: 100;
 }
 
 h6 {
@@ -41,12 +41,23 @@ h6 {
 }
 
 strong {
-  color: orange;
+  color: #ff8000;
+;
 }
 
 p {
   font-size: 1.2em;
   line-height: 130%;
+}
+
+.introAnimationText {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.introAnimationHash {
+  font-size: 1.5rem;
+  color: #ff8000;
 }
 
 .navItem,
@@ -75,7 +86,7 @@ footer {
 
 nav li:hover,
 .agentsFilterListItem:hover {
-  border: orange solid thin;
+  border: #ff8000 solid thin;
   background-color: #999999;
 }
 
@@ -89,6 +100,31 @@ nav li:hover,
           LAYOUT
 *****************************
 ****************************/
+
+#introAnimationPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  text-align: center;
+  }
+
+  .introAnimationLogo {
+    position: relative;
+    top: 125px;
+    left: -1000px;
+    width: 60%;
+    max-width: 600px;
+  }
+
+  .introAnimationText {
+    position: relative;
+    top: 175px;
+    right: -1000px;
+  }
 
 #wrapper {
   text-align: center;
@@ -124,7 +160,7 @@ nav li:hover,
 
 .imgCarouselDiv {
   /*position: relative;*/
-  /*border: solid orange;*/
+  /*border: solid #e67300;*/
   max-width: 500px;
   max-height: 250px;
   margin: 20px auto;
@@ -171,7 +207,7 @@ nav li:hover,
   margin: 10px auto;
   cursor: pointer;
   width: 75%;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
 #agentsTemplateOutput {
@@ -214,7 +250,11 @@ nav li:hover,
   font-size: .8em;
 }
 
+.footerSpan {
+  font-weight:
 
+
+}
 /****************************
 *****************************
       RESPONSIVE DESIGN
@@ -299,7 +339,8 @@ nav li:hover,
     font-size: 3em;
   }
 
-  h3 {
+  h3,
+  .introAnimationText {
     font-size: 2em;
   }
 
@@ -311,12 +352,12 @@ nav li:hover,
     font-size: 3em;
   }
 
-  strong {
-    color: orange;
-  }
-
   p {
     font-size: 1.3em;
+  }
+
+  .introAnimationHash {
+    font-size: 2rem;
   }
 
   nav li {
@@ -352,7 +393,7 @@ nav li:hover,
 
   .imgCarouselDiv {
     /*position: relative;*/
-    /*border: solid orange;*/
+    /*border: solid #ff8000;*/
     max-width: 600px;
     max-height: 350px;
     margin: 20px auto;
@@ -385,7 +426,8 @@ nav li:hover,
     font-size: 4em;
   }
 
-  h3 {
+  h3,
+  .introAnimationText {
     font-size: 3em;
   }
 
@@ -397,12 +439,12 @@ nav li:hover,
     font-size: 3em;
   }
 
-  strong {
-    color: orange;
-  }
-
   p {
     font-size: 1.5em;
+  }
+
+  .introAnimationHash {
+    font-size: 3rem;
   }
 
   #aboutPage {
