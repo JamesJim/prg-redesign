@@ -1,23 +1,24 @@
+function runAnimation(){
+  console.log("running animation");
+  $('.introAnimationLogo').animate({"left": "0"}, 2000)
+    .delay(2000)
+    .animate({"top": "0", "maxWidth": "300px"}, 700)
+    ;
+  $('.introAnimationText').animate({"right": "0"}, 2000)
+    .delay(2000)
+    .animate({"top": "1000px"}, 700);
+  $('#introAnimationPage').delay(4000).animate({"opacity": "0"},
+    {duration: 1000,
+    complete: function(){
+      $('#introAnimationPage').hide()}
+    });
+} //end runAnimation function
+
+runAnimation();
+
+
 
 $(function(){
-
-  function runAnimation(){
-    console.log("running animation");
-    $('.introAnimationLogo').animate({"left": "0"}, 2000)
-      .delay(2000)
-      .animate({"top": "0", "maxWidth": "300px"}, 700)
-      ;
-    $('.introAnimationText').animate({"right": "0"}, 2000)
-      .delay(2000)
-      .animate({"top": "1000px"}, 700);
-    $('#introAnimationPage').delay(4000).animate({"opacity": "0"},
-      {duration: 1000,
-      complete: function(){
-        $('#introAnimationPage').hide()}
-      });
-  } //end runAnimation function
-
-  runAnimation();
 
   var main = {};
 
