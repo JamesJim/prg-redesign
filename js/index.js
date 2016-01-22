@@ -13,11 +13,12 @@ $(function(){
     console.log("running animation");
     $('.introAnimationLogo').animate({"left": "0"}, 2000)
       .delay(2000)
-      .animate({"top": "0", "maxWidth": "300px"}, 700)
-      ;
+      .animate({"top": "0", "maxWidth": "300px"}, 700);
+
     $('.introAnimationText').animate({"right": "0"}, 2000)
       .delay(2000)
       .animate({"top": "1000px"}, 700);
+
     $('#introAnimationPage').delay(4000).animate({"opacity": "0"},
       {duration: 1000,
       complete: function(){
@@ -109,7 +110,7 @@ $(function(){
 
   //hover for agent profile items
   $('section').on('mouseenter','.agentProfiles',function(){
-    $(this).children().css('color','#ff8000');
+    $(this).children().css('color','#ff9900');
   });
 
   //mouseleave only triggers when leaving the parent (mouseout triggers on the parent and any children)
@@ -119,7 +120,7 @@ $(function(){
 
   //hover for hidden profile items
   $('section').on('mouseenter','.agentHiddenProfileItem',function(){
-    $(this).children('a').css('color','#ff8000');
+    $(this).children('a').css('color','#ff9900');
   });
 
   $('section').on('mouseleave','.agentHiddenProfileItem',function(){
@@ -143,9 +144,23 @@ $(function(){
   // *****************ALTERNATE SHOW/HIDE OF FEATURE DIV*************
 
 
+
   main.fadeFeature = function(){
-    $('.featureText').toggle(1000).delay(10000);    main.fadeFeature();
+
+    var $elem = $('.featureText');
+    var i = 0;
+    var l = $elem.length;
+
+    function startFade(){
+      $elem.eq(i % l).fadeIn(700, function(){
+        $elem.eq(i % l).delay(6000).fadeOut(700, startFade);
+        i++;
+      });
+    }
+    startFade();
   }
+
+  main.fadeFeature();
 
 
 
@@ -191,7 +206,6 @@ $(function(){
   });
 
 
-  main.fadeFeature();
 
 
 

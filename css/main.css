@@ -41,7 +41,7 @@ h6 {
 }
 
 strong {
-  color: #ff8000;
+  color: #ff9900;
 ;
 }
 
@@ -57,7 +57,7 @@ p {
 
 .introAnimationHash {
   font-size: 1.5rem;
-  color: #ff8000;
+  color: #ff9900;
 }
 
 .navItem,
@@ -86,7 +86,7 @@ footer {
 
 nav li:hover,
 .agentsFilterListItem:hover {
-  border: #ff8000 solid thin;
+  border: #ff9900 solid thin;
   background-color: #999999;
 }
 
@@ -150,7 +150,7 @@ nav li:hover,
   border-bottom: white solid thin;
 }
 
-.feature2 {
+.featureText {
   display: none;
 }
 
@@ -160,7 +160,7 @@ nav li:hover,
 
 .imgCarouselDiv {
   /*position: relative;*/
-  /*border: solid #e67300;*/
+  /*border: solid #ff9900;*/
   max-width: 500px;
   max-height: 250px;
   margin: 20px auto;
@@ -393,7 +393,7 @@ nav li:hover,
 
   .imgCarouselDiv {
     /*position: relative;*/
-    /*border: solid #ff8000;*/
+    /*border: solid #ff9900;*/
     max-width: 600px;
     max-height: 350px;
     margin: 20px auto;
