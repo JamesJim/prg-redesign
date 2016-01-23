@@ -154,14 +154,14 @@ a:hover {
 
 #searchPage {
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
   width: 95%;
   margin: 0 auto;
   -webkit-overflow-scrolling: touch;
 }
 
 #realtorDotCom {
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .feature {
@@ -222,7 +222,7 @@ a:hover {
   flex-direction: column;
   margin: 10px auto;
   cursor: pointer;
-  width: 75%;
+  width: 60%;
   /*justify-content: center;*/
 }
 
@@ -415,6 +415,7 @@ a:hover {
   .agentsFilterList {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 75%;
   }
 
   .agentsFilterListItem {
