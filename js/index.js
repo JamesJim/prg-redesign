@@ -85,24 +85,48 @@ $(function(){
 
   $('#aboutPage').hide();
   $('#agentsPage').hide();
+  $('#searchPage').hide();
+  $('#toolsPage').hide();
 
   $('.navAbout').on('click', function(){
     $('#homePage').hide();
     $('#agentsPage').hide();
+    $('#searchPage').hide();
+    $('#toolsPage').hide();
     $('#aboutPage').show();
   });
 
   $('.navAgents').on('click', function(){
     $('#homePage').hide();
     $('#aboutPage').hide();
+    $('#searchPage').hide();
     $('#agentsPage').show();
+    $('#toolsPage').hide();
     $('.agentProfiles').show();
   });
 
   $('.navHome').on('click', function(){
     $('#aboutPage').hide();
     $('#agentsPage').hide();
+    $('#searchPage').hide();
+    $('#toolsPage').hide();
     $('#homePage').show();
+  });
+
+  $('.navSearch').on('click', function(){
+    $('#aboutPage').hide();
+    $('#agentsPage').hide();
+    $('#homePage').hide();
+    $('#toolsPage').hide();
+    $('#searchPage').show();
+  });
+
+  $('.navTools').on('click', function(){
+    $('#aboutPage').hide();
+    $('#agentsPage').hide();
+    $('#homePage').hide();
+    $('#searchPage').hide();
+    $('#toolsPage').show();
   });
 
 

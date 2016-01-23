@@ -31,18 +31,17 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 1.8em;
   font-weight: 100;
 }
 
-h6 {
+h6, .tick {
   font-size: 1.3em;
-  font-weight: 500;
+  font-weight: 100;
 }
 
 strong {
   color: #ff9900;
-;
 }
 
 p {
@@ -75,6 +74,10 @@ p {
   font-size: .6em;
 }
 
+.agentsFilterListItem>h3 {
+  font-size: 1.4em;
+}
+
 footer {
   display: flex;
   flex-direction: row;
@@ -90,6 +93,9 @@ nav li:hover,
   background-color: #999999;
 }
 
+a:hover {
+  color: #ff9900;
+}
 
 .agentProfiles {
   cursor: pointer;
@@ -110,6 +116,7 @@ nav li:hover,
   min-height: 1000px;
   background: #000;
   text-align: center;
+  overflow: hidden;
   }
 
   .introAnimationLogo {
@@ -139,7 +146,8 @@ nav li:hover,
   max-width: 300px;
 }
 
-#aboutPage {
+#aboutPage,
+#toolsPage {
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -151,10 +159,6 @@ nav li:hover,
 }
 
 .featureText {
-  display: none;
-}
-
-.hidden {
   display: none;
 }
 
@@ -198,7 +202,7 @@ nav li:hover,
 }
 
 .agentsPageFeature {
-  margin: 50px 12px 40px 12px;
+  margin: 25px 12px 5px 12px;
 }
 
 .agentsFilterList {
@@ -211,7 +215,7 @@ nav li:hover,
 }
 
 #agentsTemplateOutput {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .agentProfiles {
@@ -229,9 +233,27 @@ nav li:hover,
   margin-top: 10px;
 }
 
-.aboutPageSection {
+.aboutPageSection>h6,
+.toolsPageSection>h6 {
   margin: 25px auto;
   text-align: left;
+}
+
+.toolsPageSection>h3 {
+  text-align: center;
+  margin: 25px auto;
+}
+
+.toolsPageSection ul {
+  list-style: none;
+  text-align: left;
+}
+
+.tick:before {
+  content: "\2713";
+  color: #ff9900;
+  padding-left: 15px;
+  margin-top: 5px;
 }
 
 #officesTemplateOutput {
@@ -263,19 +285,6 @@ nav li:hover,
 
 
 @media (min-width: 400px){
-
-  .navContainer {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .navItem {
-    flex: 1;
-  }
-
-  .navAgents {
-    flex: 2;
-  }
 
   .featureText {
     font-size: .8em;
@@ -323,6 +332,19 @@ nav li:hover,
 
 @media (min-width: 600px){
 
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navItem {
+    flex: 1;
+  }
+
+  .navAgents {
+    flex: 2;
+  }
+
   .featureText {
     font-size: 1em;
   }
@@ -341,10 +363,10 @@ nav li:hover,
 
   h3,
   .introAnimationText {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
-  h6 {
+  h6, .tick {
     font-size: 1.8em;
   }
 
@@ -372,7 +394,8 @@ nav li:hover,
     margin-right: 20%;
   }
 
-  #aboutPage {
+  #aboutPage,
+  #toolsPage {
     margin-left: 15%;
     margin-right: 15%;
   }
@@ -385,6 +408,10 @@ nav li:hover,
   .agentsFilterListItem {
     flex-basis: 181px;
     font-size: 1em;
+  }
+
+  .agentsFilterListItem>h3 {
+    font-size: 2em;
   }
 
   .agentProfiles {
@@ -431,7 +458,7 @@ nav li:hover,
     font-size: 3em;
   }
 
-  h6 {
+  h6, .tick {
     font-size: 2em;
   }
 
@@ -447,7 +474,8 @@ nav li:hover,
     font-size: 3rem;
   }
 
-  #aboutPage {
+  #aboutPage,
+  #toolsPage {
     margin-left: 15%;
     margin-right: 15%;
   }
@@ -456,8 +484,8 @@ nav li:hover,
     flex-basis: 250px;
   }
 
-  .agentsFilterListItem h3 {
-    font-size: 1.8em;
+  .agentsFilterListItem>h3 {
+    font-size: 2.3em;
   }
 
   .agentProfiles {
