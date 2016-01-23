@@ -125,15 +125,15 @@ $(function(){
     $('#homePage').show();
   });
 
-  var loadCount = 0;
+  var iframeLoadCount = 0;
   $('.navSearch').on('click', function(){
     $('#aboutPage').hide();
     $('#agentsPage').hide();
     $('#homePage').hide();
     $('#toolsPage').hide();
     $('#searchPage').show();
-    loadCount ++;
-    if(loadCount <= 1){
+    iframeLoadCount ++;
+    if(iframeLoadCount <= 1){
       $('#realtorDotCom').replaceWith($('#realtorDotCom').clone());
     }
   });
