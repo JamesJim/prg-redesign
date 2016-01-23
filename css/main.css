@@ -152,6 +152,18 @@ a:hover {
   margin-right: 10%;
 }
 
+#searchPage {
+  position: relative;
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#realtorDotCom {
+
+}
+
 .feature {
   margin: 5px 0 5px 0;
   padding-bottom: 5px;
