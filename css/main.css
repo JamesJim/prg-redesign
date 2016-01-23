@@ -36,7 +36,7 @@ h3 {
 }
 
 h6, .tick {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: 100;
 }
 
@@ -45,7 +45,7 @@ strong {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 130%;
 }
 
@@ -161,7 +161,7 @@ a:hover {
 }
 
 #realtorDotCom {
-
+  overflow: hidden;
 }
 
 .feature {
@@ -235,8 +235,8 @@ a:hover {
 }
 
 .agentPhoto {
-  height: 100px;
-  width: 100px;
+  height: 125px;
+  width: 125px;
   border-radius: 50%;
 }
 
