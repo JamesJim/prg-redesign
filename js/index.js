@@ -6,10 +6,9 @@ $('.footer').hide();
 
 $(function(){
 
+  var main = {};
 
-
-
-  function runAnimation(){
+  main.runAnimation = function(){
     console.log("running animation");
     $('.introAnimationLogo').animate({"left": "0"}, 2000)
       .delay(2000)
@@ -27,11 +26,21 @@ $(function(){
         $('.footer').show();
         }
       });
-  } //end runAnimation function
+  } //end main.runAnimation function
 
-  runAnimation();
 
-  var main = {};
+  main.loadIframe = function(){
+    var iframeLoadCount = 0;
+    function loadOnce(iframe) {
+      iframeLoadCount ++;
+      if (iframeLoadCount <= 1) {
+        iframe.contentWindow.location.reload();
+        console.log("reload()");
+      }
+    }
+  }
+
+
 
   //function to compile object data into templates
   main.handlebars = function(data, templatePath, outputDiv){
@@ -68,6 +77,9 @@ $(function(){
 
     });
   }; //end fetchData function
+
+  //call function to run introAnimation
+  main.runAnimation();
 
   //call functions to get agents data, compile, send to page
   var agentsData;
@@ -113,12 +125,17 @@ $(function(){
     $('#homePage').show();
   });
 
+  var loadCount = 0;
   $('.navSearch').on('click', function(){
     $('#aboutPage').hide();
     $('#agentsPage').hide();
     $('#homePage').hide();
     $('#toolsPage').hide();
     $('#searchPage').show();
+    loadCount ++;
+    if(loadCount <= 1){
+      $('#realtorDotCom').replaceWith($('#realtorDotCom').clone());
+    }
   });
 
   $('.navTools').on('click', function(){
