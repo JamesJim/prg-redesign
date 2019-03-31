@@ -18,6 +18,11 @@ html, body {
   width: 100%;
 }
 
+#wrapper {
+  height: 95%;
+  width: 100%;
+}
+
 nav {
   border-bottom: solid thin #fff;
   border-top: solid thin #fff;
@@ -89,7 +94,7 @@ footer {
   justify-content: center;
   border-top: #fff solid thin;
   background: #000;
-  height: 70px;
+  height: 5%;
 }
 
 nav li:hover,
